@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Logo from '../assets/images/logo.png'
+import { ModeToggle } from './ui/ThemeToggler'
 export const Header = () => {
   return (
     <header className='flex justify-around items-center h-32 border border-green-500'>
@@ -18,6 +19,7 @@ export const Header = () => {
         </div>
         <div>
             {/*Dark mode toggler komt hier*/}
+            <ModeToggle />
         </div>
     </header>
   )
