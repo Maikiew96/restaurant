@@ -4,7 +4,7 @@ import Logo from '../assets/images/logo.png'
 import { ModeToggle } from './ui/ThemeToggler'
 export const Header = () => {
   return (
-    <header className='flex justify-around items-center h-32 border border-green-500'>
+    <header className='flex justify-around items-center h-32'>
         <div>
             <p>Titel komt hier</p>
         </div>
