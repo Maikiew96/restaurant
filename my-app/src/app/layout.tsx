@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Fuzzy_Bubbles } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/Themeprovider";
 import { Header } from "./components/Header";
 import Introduction from "./components/Introduction";
 
+
 const inter = Inter({ subsets: ["latin"] });
+
+const fuzzy = Fuzzy_Bubbles ({
+  weight: '700',
+  preload: false,
+
+})
+
+
 
 export const metadata: Metadata = {
   title: "Pizza",
@@ -19,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={fuzzy.className}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
