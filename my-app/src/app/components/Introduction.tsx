@@ -1,9 +1,15 @@
 import React from 'react'
+import Image from 'next/image'
+
+import RotatingImage from './ui/RotatingImage'
 
 export default function Introduction() {
   return (
-    <div className='flex justify-center'>
-        <h1 className='text-2xl'>Welcome to Da Pizza Italian food & drinks!</h1>
-    </div>
+
+      <div>
+       
+        <RotatingImage />
+      </div>
+    //
   )
 }

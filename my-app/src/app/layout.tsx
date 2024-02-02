@@ -29,7 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fuzzy.className}>
+      <body className={`${fuzzy.className}`}>
+       
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -39,7 +40,9 @@ export default function RootLayout({
         <Header/>
         <Introduction />
         {children}
-        </ThemeProvider ></body>
+        </ThemeProvider >
+       
+        </body>
     </html>
   );
 }

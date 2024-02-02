@@ -52,6 +52,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        lineHeight: {
+          'extra-loose': '60',
+          '12': '30rem'
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
