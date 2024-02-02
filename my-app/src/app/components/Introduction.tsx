@@ -1,14 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import Search from './ui/Search'
 
-import RotatingImage from './ui/RotatingImage'
 
 export default function Introduction() {
   return (
 
       <div>
-       
-        <RotatingImage />
+        <Search />
       </div>
     //
   )
