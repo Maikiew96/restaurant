@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from "react";
 import Image from "next/image";
 import Introduction from "./components/Introduction";
+import Cards from "./components/ui/Cards";
 
 
 export default function Home() {
@@ -43,12 +44,26 @@ export default function Home() {
   console.log(recipes);
   
 
+//assing types to data
+interface Recipe {
+  idMeal: number;
+  strMeal: string;
+  strMealThumb: string;
+}
+
+interface CardsProps {
+  recipe: Recipe;
+}
+
+
   return (
     <main className="">
       <Introduction />
       <div className="flex items-center justify-center p10">
         <div className="flex flex-wrap flex-col lg:flex-row items-center gap-5">
-          
+          {recipes?.map((recipe: Recipe) => (
+            <Cards key={recipe.idMeal} recipe={recipe} />
+          ))}
         </div>
       </div>
     </main>
