@@ -41,7 +41,7 @@ export default function Home() {
     fetchRecipes();
   }, []);
 
-  console.log(recipes);
+
   
 
 //assing types to data
@@ -60,7 +60,7 @@ interface CardsProps {
     <main className="">
       <Introduction />
       <div className="flex items-center justify-center p10">
-        <div className="flex flex-wrap flex-col lg:flex-row items-center gap-5">
+        <div className="flex flex-wrap flex-col items-center justify-center lg:flex-row gap-2">
           {recipes?.map((recipe: Recipe) => (
             <Cards key={recipe.idMeal} recipe={recipe} />
           ))}
