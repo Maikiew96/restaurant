@@ -24,7 +24,7 @@ export default function Home() {
           throw new Error ('something went wrong')
         }
 
-        //verander resultaat in JSON object
+        //convert resultaat in JSON object
         const result = await res.json();
        
         setRecipes(result?.meals)
@@ -51,6 +51,7 @@ interface Recipe {
   strMealThumb: string;
 }
 
+//niet gebruikt atm
 interface CardsProps {
   recipe: Recipe;
 }
@@ -60,7 +61,7 @@ interface CardsProps {
     <main className="">
       <Introduction />
       <div className="flex items-center justify-center p10">
-        <div className="flex flex-wrap flex-col items-center justify-center lg:flex-row gap-2">
+        <div className="flex flex-wrap flex-col items-center justify-center lg:flex-row gap-8">
           {recipes?.map((recipe: Recipe) => (
             <Cards key={recipe.idMeal} recipe={recipe} />
           ))}
