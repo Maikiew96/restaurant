@@ -1,2 +1,2 @@
 # restaurant
-Only using docs/information, no videos.
+useEffect hook, fetching some data and display with array functions
